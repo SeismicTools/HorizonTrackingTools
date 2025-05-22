@@ -267,9 +267,7 @@ namespace FotiadiMath
         /// <summary>Функция для выставления прогресса.</summary>
         /// <param name="value">Новое значение прогресса.</param>
         /// <param name="data">В cpp это const void*. Сюда будет передаваться ваш объект обратно, чтобы производить с ним какие-либо действия.</param>
-        /// <returns>
-        ///   <br />
-        /// </returns>
+        /// <returns>0 - продолжить вычисления, 1 - остановить вычисления.<br /></returns>
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         public delegate int SetProgressValueFunc( double value, IntPtr data );
 
