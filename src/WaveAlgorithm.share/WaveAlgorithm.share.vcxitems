@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{09c276cc-c1f5-4810-a324-dfbace0c7726}</ItemsProjectGuid>
+    <ItemsProjectName>WaveAlgorithm.share</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)list_maze.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)matrix_maze.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)new_list_maze.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wave_alg.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wave_alg_list_maze.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)wave_alg.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)wave_alg_multipoint.cpp" />
+  </ItemGroup>
+</Project>

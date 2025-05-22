@@ -1,0 +1,10 @@
+1) установить doxygen https://www.doxygen.nl/download.html
+2) установить latex https://miktex.org/download
+3) Tools -> options -> Text Editor -> C/C++ -> Code Style -> General -> Comments -> выбираем "Doxygen (/**)"
+4) Запустить Doxywizard и открыть им "Doxyfile" в папке с проектом 
+5) Поставить галочку "Scan Recursively"
+
+Чтобы сделать pdf:
+1) заходим в Docs\latex
+2)запускаем make.bat
+3) результат будет здесь "refman.pdf"

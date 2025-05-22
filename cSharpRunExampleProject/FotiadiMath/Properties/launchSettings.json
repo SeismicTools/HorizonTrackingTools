@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FotiadiMath": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

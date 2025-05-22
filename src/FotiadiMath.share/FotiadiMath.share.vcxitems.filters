@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)correlation.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)correlation_trace.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)optimal_radius.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)prepare_data.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)seismic2D.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)seismic3D.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)seismic3D_Nikita.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Point3DSimilarityHelper.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Seismic3DGraph.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Seismic3DPointWithNeighboursAndSimilarityValues.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Seismic3DCube.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PrimSpanningTree.cpp">
+      <Filter>PrimSpanningTree</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)S3GraphPrimSpanningTreeAdapter.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Seismic3DPointNeighbour.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CorrelationDataShare.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)S3DEdge.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ReflectingHorizonDefiner.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CoordinatesInCube.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ReflectingHorizonDefinerForEntireTrace.cpp">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)HorizonWrapper.cpp">
+      <Filter>Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MainAndOtherPointsData.cpp">
+      <Filter>OneToManyTracesAlgo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)correlation_alg.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)fotiadi_math.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)fotiadi_math_private.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)fotiadi_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Seismic3DPointWithNeighboursAndSimilarityValues.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CoordinatesInCube.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)seismic3D_Nikita.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DataToFillGraphPoints.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Seismic3DGraph.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Seismic3DPointNeighbour.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Point3DSimilarityHelper.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Seismic3DCube.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PrimSpanningTree.h">
+      <Filter>PrimSpanningTree</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AdjacencyListUnit.h">
+      <Filter>PrimSpanningTree</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Edge.h">
+      <Filter>PrimSpanningTree</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)S3GraphPrimSpanningTreeAdapter.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CorrelationDataShare.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)S3DEdge.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ReflectingHorizonDefiner.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CoordinatesAtCube3d.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ReflectingHorizonDefinerForEntireTrace.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)HorizonWrapper.h">
+      <Filter>Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TypedefStuff.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NotImplementedException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MainAndOtherPointsData.h">
+      <Filter>OneToManyTracesAlgo</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ArgumentIllegalException.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)correlation_trace_new.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CoordinatesInCubeWithIdWhereTraceStatrs.h">
+      <Filter>Seismic3DCorrelationAuxiliary</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Seismic3DCorrelationAuxiliary">
+      <UniqueIdentifier>{04b0e153-4bb5-47d7-9a01-923c3d05bf7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PrimSpanningTree">
+      <UniqueIdentifier>{0cbb440e-6453-4c44-b7b2-70e042faa63a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Abstract">
+      <UniqueIdentifier>{b2fd9af3-103e-4ef5-ba1e-237488b375b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exceptions">
+      <UniqueIdentifier>{3d355559-fbe4-4f0b-857c-919773198a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OneToManyTracesAlgo">
+      <UniqueIdentifier>{855c3d4f-9549-4f27-bd92-d22ffcd9042c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

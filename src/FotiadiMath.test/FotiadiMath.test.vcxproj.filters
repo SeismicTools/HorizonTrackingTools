@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="metric.test.cpp" />
+    <ClCompile Include="correlation.test.cpp" />
+    <ClCompile Include="seismic2D.test.cpp" />
+    <ClCompile Include="correlation_trace.test.cpp" />
+    <ClCompile Include="normalization.test.cpp" />
+    <ClCompile Include="define_optimal_radius.test.cpp" />
+    <ClCompile Include="test_utils.cpp" />
+    <ClCompile Include="load_seisimc_3d.test.cpp" />
+    <ClCompile Include="seismic3D.test.cpp" />
+    <ClCompile Include="CorrelationByWaveAlgorithm.test.cpp" />
+    <ClCompile Include="seismic3D_Nikita.test.cpp">
+      <Filter>seismic3D_Nikita</Filter>
+    </ClCompile>
+    <ClCompile Include="primSpanningTreeTests.cpp" />
+    <ClCompile Include="S3DDefineReflectingHorizons.test.cpp">
+      <Filter>seismic3D_Nikita</Filter>
+    </ClCompile>
+    <ClCompile Include="DefineReflectingHorizonsForEntireTrace.test.cpp">
+      <Filter>seismic3D_Nikita</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.h">
+      <Filter>seismic3D_Nikita</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>seismic3D_Nikita</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Data">
+      <UniqueIdentifier>{a2d4bf69-dd6a-414e-a2ff-19bcfc95e54a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\ex1">
+      <UniqueIdentifier>{0ed91302-ed51-4ca4-b9ed-78d0e8d12f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="seismic3D_Nikita">
+      <UniqueIdentifier>{8fb927fb-4bfa-4dcd-8b02-964604d358c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\seismic3D_Nikita">
+      <UniqueIdentifier>{7e3e916a-e570-4029-8427-9b84f771f11a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Data\ex1\image_2024-02-05_11-38-19.png">
+      <Filter>Data\ex1</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\ex1\Los-Yar_41_2D_Trace_1500.txt">
+      <Filter>Data\ex1</Filter>
+    </Text>
+    <Text Include="Data\ex1\Los-Yar_41_Syntetic_Full.txt">
+      <Filter>Data\ex1</Filter>
+    </Text>
+    <Text Include="Data\ex1\readme.txt">
+      <Filter>Data\ex1</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Data\seismic3D_Nikita\cube.bin">
+      <Filter>Data\seismic3D_Nikita</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test_utils.h" />
+  </ItemGroup>
+</Project>

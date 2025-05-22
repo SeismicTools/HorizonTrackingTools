@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<PlatformName>windows</PlatformName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.0</Version>
+    <Authors>Alexander A. Vlasov, Nikita S. Romanov</Authors>
+    <Company>NSU</Company>
+	<Product>Desmana</Product>
+	<PackageId>NSU.Kraton.FotiadiMath</PackageId>
+    <PackageReleaseNotes>Added autocorrelation func and couple approaches to correlation horizons.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="libomp140.x86_64.dll" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <Content Include="FotiadiMath.win.dll">
+      <Pack>true</Pack>
+      <BuildAction>None</BuildAction>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libomp140.x86_64.dll">
+	  <Pack>true</Pack>
+	  <BuildAction>None</BuildAction>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

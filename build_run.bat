@@ -1,0 +1,29 @@
+@ECHO OFF 
+
+SET BUILD_NUMBER=3
+SET NAME_PROJECT="FotiadiMath"
+
+rem echo %date%
+SET CURDATE=%date:~8,2%%date:~3,2%%date:~0,2%
+rem echo %CURDATE%
+
+set OUTPUT_DIR_LOG=.\BUILD_LOG\
+set OUTPUT_DIR=.\BUILD\
+
+SET OUTNAME=%NAME_PROJECT%_%BUILD_NUMBER%_%CURDATE%
+
+
+if exist %OUTPUT_DIR_LOG% rmdir %OUTPUT_DIR_LOG% /s /q
+MKDIR %OUTPUT_DIR_LOG%
+
+if exist %OUTPUT_DIR% rmdir %OUTPUT_DIR% /s /q
+MKDIR %OUTPUT_DIR%
+
+
+call build.bat %OUTPUT_DIR% >%OUTPUT_DIR_LOG%build.out 2>%OUTPUT_DIR_LOG%build.err
+ 
+IF %ERRORLEVEL% NEQ 0 ECHO FAILD BUILD & GOTO :EOF
+
+7z a -r -mx9 %OUTNAME%.zip %OUTPUT_DIR%*.* 
+
+ECHO SUCCESSFUL BUILD

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FotiadiMathUnitTests": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
